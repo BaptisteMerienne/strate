@@ -16,3 +16,8 @@ class DatasetAnalysis(BaseModel):
     column_count: int
     columns: List[ColumnInfo]
     preview: List[Dict[str, Any]]
+
+
+class AnalysisWithInsights(BaseModel):
+    analysis: DatasetAnalysis
+    insights: str
