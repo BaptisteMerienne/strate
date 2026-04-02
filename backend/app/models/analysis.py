@@ -21,3 +21,12 @@ class DatasetAnalysis(BaseModel):
 class AnalysisWithInsights(BaseModel):
     analysis: DatasetAnalysis
     insights: str
+
+
+class AnalysisSummary(BaseModel):
+    id: str
+    created_at: str
+    filename: str
+    row_count: int
+    column_count: int
+    insights: str
