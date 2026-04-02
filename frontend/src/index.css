@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --amber-50: #FAEEDA;
+  --amber-100: #FAC775;
+  --amber-200: #EF9F27;
+  --amber-400: #BA7517;
+  --amber-600: #854F0B;
+  --amber-800: #633806;
+
+  --stone-50: #FAFAF9;
+  --stone-100: #F5F5F4;
+  --stone-200: #E7E5E4;
+  --stone-300: #D6D3D1;
+  --stone-500: #78716C;
+  --stone-600: #57534E;
+  --stone-700: #44403C;
+  --stone-800: #292524;
+}
+
+body {
+  background-color: var(--stone-100);
+  color: var(--stone-800);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
