@@ -1,26 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 :root {
-  --amber-50: #FAEEDA;
-  --amber-100: #FAC775;
-  --amber-200: #EF9F27;
-  --amber-400: #BA7517;
-  --amber-600: #854F0B;
-  --amber-800: #633806;
+  --amber-50: #faf5ec;
+  --amber-100: #efe4c8;
+  --amber-200: #CJAA70;
+  --amber-300: #b8924a;
+  --amber-400: #c17d2a;
+  --amber-600: #8b5e1a;
+  --amber-700: #6b4410;
+  --amber-800: #4a2d08;
+  --amber-900: #2c1a06;
 
-  --stone-50: #FAFAF9;
-  --stone-100: #F5F5F4;
-  --stone-200: #E7E5E4;
-  --stone-300: #D6D3D1;
-  --stone-500: #78716C;
-  --stone-600: #57534E;
-  --stone-700: #44403C;
-  --stone-800: #292524;
+  --stone-50: #faf5ec;
+  --stone-100: #efe4c8;
+  --stone-200: #d4bc90;
+  --stone-300: #b8924a;
+  --stone-500: #8b6340;
+  --stone-600: #6b4410;
+  --stone-700: #4a2d08;
+  --stone-800: #2c1a06;
 }
 
 body {
-  background-color: var(--stone-100);
-  color: var(--stone-800);
-  font-family: 'Inter', sans-serif;
+  background-color: #faf5ec;
+  color: #2c1a06;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
 }
