@@ -1,6 +1,14 @@
 import pandas as pd
+import re
 from io import BytesIO
 from app.models.analysis import DatasetAnalysis, ColumnInfo
+
+
+def clean_column_name(name: str) -> str:
+    name = str(name).strip()
+    name = re.sub(r"^[#@!$%^&*]+", "", name)
+    name = name.strip()
+    return name if name else "colonne_sans_nom"
 
 
 def analyse_csv(file_content: bytes, filename: str) -> DatasetAnalysis:
@@ -9,7 +17,6 @@ def analyse_csv(file_content: bytes, filename: str) -> DatasetAnalysis:
     columns = []
     for col in df.columns:
         dtype = str(df[col].dtype)
-
         if dtype in ["int64", "float64"]:
             col_type = "number"
         elif dtype == "bool":
@@ -29,7 +36,7 @@ def analyse_csv(file_content: bytes, filename: str) -> DatasetAnalysis:
             )
         )
 
-    preview = df.head(5).fillna("").to_dict(orient="records")
+    preview = df.head(10).fillna("").to_dict(orient="records")
 
     return DatasetAnalysis(
         filename=filename,
