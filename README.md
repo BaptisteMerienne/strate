@@ -4,7 +4,7 @@
 
 **Strate** transforme n'importe quel fichier CSV en rapport analytique complet en quelques secondes. Upload un fichier, obtiens des visualisations automatiques et des insights générés par IA.
 
-🔗 **[Démo en ligne](https://strate.vercel.app)** · **[Backend API](https://strate-api.onrender.com/docs)**
+🔗 **[Démo en ligne](https://strate-six.vercel.app/)** · **[Backend API](https://strate-api.onrender.com/docs)**
 
 ---
 
